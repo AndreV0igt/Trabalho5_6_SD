@@ -1,0 +1,175 @@
+[
+  {
+    "scenario": "normal",
+    "resilient": false,
+    "duration_s": 0.3075078999991092,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      }
+    }
+  },
+  {
+    "scenario": "normal",
+    "resilient": true,
+    "duration_s": 0.28027859999929206,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      }
+    }
+  },
+  {
+    "scenario": "erro",
+    "resilient": false,
+    "duration_s": 0.26174319999881845,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 12
+      }
+    }
+  },
+  {
+    "scenario": "erro",
+    "resilient": true,
+    "duration_s": 1.0852891999984422,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "OPEN",
+        "failures": 3,
+        "blocked": 9,
+        "transitions": 1,
+        "attempts": 9,
+        "retries": 6,
+        "errors": 9
+      }
+    }
+  },
+  {
+    "scenario": "latencia",
+    "resilient": false,
+    "duration_s": 14.703590799999802,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      }
+    }
+  },
+  {
+    "scenario": "latencia",
+    "resilient": true,
+    "duration_s": 5.631764899999325,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 12,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "OPEN",
+        "failures": 3,
+        "blocked": 9,
+        "transitions": 1,
+        "attempts": 9,
+        "retries": 6,
+        "errors": 9
+      }
+    }
+  },
+  {
+    "recovery_s": 5.0269852000001265,
+    "metrics": {
+      "stock": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 0,
+        "transitions": 0,
+        "attempts": 23,
+        "retries": 0,
+        "errors": 0
+      },
+      "payment": {
+        "state": "CLOSED",
+        "failures": 0,
+        "blocked": 19,
+        "transitions": 3,
+        "attempts": 10,
+        "retries": 6,
+        "errors": 9
+      }
+    }
+  }
+]

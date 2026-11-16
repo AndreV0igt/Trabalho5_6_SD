@@ -1,0 +1,5 @@
+.venv
+.git
+__pycache__
+resultados
+.pytest_cache

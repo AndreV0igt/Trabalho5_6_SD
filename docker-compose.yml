@@ -1,0 +1,22 @@
+services:
+  pedidos:
+    build: .
+    command: python -m uvicorn servico_pedidos.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      STOCK_URL: http://estoque:8001
+      PAYMENT_URL: http://pagamento:8002
+    depends_on:
+      - estoque
+      - pagamento
+  estoque:
+    build: .
+    command: python -m uvicorn servico_estoque.main:app --host 0.0.0.0 --port 8001
+    ports:
+      - "127.0.0.1:8001:8001"
+  pagamento:
+    build: .
+    command: python -m uvicorn servico_pagamento.main:app --host 0.0.0.0 --port 8002
+    ports:
+      - "127.0.0.1:8002:8002"
